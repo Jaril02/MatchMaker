@@ -1,55 +1,63 @@
+# ----------------------
 # Python
+# ----------------------
 __pycache__/
 *.py[cod]
 *$py.class
+
+# Virtual environments
 .env
 venv/
 env/
+
+# Databases
 *.sqlite3
 *.db
-*.doc
 
-# Django/static stuff (if used)
+
+# ----------------------
+# Django/static (if used)
+# ----------------------
 staticfiles/
 media/
 
-# VS Code
-.vscode/
-
-# Pytest
-.pytest_cache/
-
-# macOS
-.DS_Store
-
-# Node
+# ----------------------
+# Node / Frontend
+# ----------------------
 node_modules/
+frontend/node_modules/
+frontend/.cache/
+frontend/dist/
+
+# Lock files (optional ignore)
 pnpm-lock.yaml
 yarn.lock
 package-lock.json
+
+# Build output
 build/
 dist/
 
-# Frontend output
-frontend/dist/
-
-# Logs
+# ----------------------
+# Logs & Temp
+# ----------------------
 *.log
-
-# Temp
 *.tmp
 *.swp
 
-# JetBrains
+# ----------------------
+# IDEs
+# ----------------------
+.vscode/
 .idea/
 
-# System
+# ----------------------
+# OS files
+# ----------------------
+.DS_Store
 Thumbs.db
 
-# Add any local override files
+# ----------------------
+# Local config
+# ----------------------
 .local.env
-
-# Backend/Frontend directories
-/backend/__pycache__/
-/frontend/node_modules/
-/frontend/.cache/
